@@ -1,0 +1,132 @@
+/* ==============================
+   Mobile First Responsive Design
+   ============================== */
+
+/* Default: Mobile (max 600px) */
+@media (max-width: 600px) {
+
+  /* Banner */
+  .banner {
+    height: 70vh;
+    padding: 15px;
+  }
+
+  .banner-info h1 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .banner-info .p1 {
+    font-size: 14px;
+  }
+
+  .banner-info .p2 {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  /* Single Card */
+  .single-card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .single-card img {
+    height: 150px;
+  }
+
+  /* About */
+  .about {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+
+  .about-img img {
+    max-width: 100%;
+  }
+
+  /* Card Box */
+  .food-card-box {
+    padding: 40px 20px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  /* Social */
+  .social {
+    padding: 60px 15px;
+  }
+
+  .social h2 {
+    font-size: 22px;
+  }
+
+  .social p,
+  .social h4 {
+    font-size: 14px;
+  }
+
+  .social-icons a img {
+    width: 28px;
+    margin: 0 6px;
+  }
+}
+
+/* Tablet (601px - 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+
+  .banner-info h1 {
+    font-size: 28px;
+  }
+
+  .single-card {
+    width: 70%;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+
+/* Desktop (900px and up) */
+@media (min-width: 901px) {
+  .banner-info h1 {
+    font-size: 36px;
+  }
+
+  .about {
+    flex-direction: row;
+    padding: 60px 10%;
+  }
+
+  .card-container {
+    flex-wrap: nowrap;
+  }
+
+  .card {
+    width: 250px;
+  }
+}

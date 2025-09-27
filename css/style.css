@@ -1,0 +1,249 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+/* Banner */
+.banner {
+  background: url("../images/banner.bg.png") no-repeat center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+.banner-info .p1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.banner-info h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.banner-info .p2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.btn {
+  padding: 10px 20px;
+  background: green;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: darkgreen;
+}
+/* single catd start */
+
+/* Single Card */
+.single-card {
+  text-align: center;
+  padding: 30px 20px;   /* কম padding */
+  margin: 40px auto;   /* section এর সাথে spacing balance */
+  width: 280px;        /* card এর max width fix */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.single-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.single-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.single-card p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+
+/* single catd End */
+
+/* About Section start */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 10%;
+}
+
+.about-img {
+  flex: 1;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.about-info {
+  flex: 1;
+}
+
+.about-info h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.about-info p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about-social a img {
+  width: 35px;
+  margin-right: 12px;
+  transition: transform 0.3s ease;
+}
+
+.about-social a img:hover {
+  transform: scale(1.2);
+}
+ /* about section End */
+
+/* Card Box Section start */
+.food-card-box {
+  text-align: center;
+  padding: 60px 10%;
+  background: #fff;
+}
+
+.food-card-box h2 {
+  font-size: 26px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.card p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.card button {
+  background: green;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: darkgreen;
+}
+/* card bax section End */
+
+/* Social Section start */
+.social {
+  background: url("../images/social.icon.png") no-repeat center/cover;
+  padding: 100px 20px;
+  position: relative;
+  text-align: center;
+  color: #ffff;
+}
+
+.social::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255, 255, 255, 0.6); /* white overlay */
+  z-index: 1;
+}
+
+.social .overlay {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: auto;
+}
+
+.social h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #312b2b;
+}
+
+.social p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.social h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.social-icons a img {
+  width: 35px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+/* social section End */
